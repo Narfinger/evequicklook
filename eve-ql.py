@@ -26,7 +26,7 @@ from xml.dom import minidom
 import datetime
 from decimal import *
 import locale
-#locale.setlocale(locale.LC_ALL, 'en_EN.UTF-8')
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 import sqlite3
 ORDERSTATE_DICT = {0:"open", 1:"closed", 2:"expired", 3:"cancelled", 4:"pending", 5:"character delted"}
 
