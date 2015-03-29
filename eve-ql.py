@@ -177,7 +177,7 @@ def getSkillQueue(charid, status):
                     for x in skills]
     
     for skill in skillsclass:
-        result = conn.execute('SELECT skillName from skills_master where typeID=%s' % skill.typeID).fetchall()[0][0]
+        result = conn.execute('SELECT typeName from invtypes where typeID=%s' % skill.typeID).fetchall()[0][0]
         skill.name = result
     return skillsclass
 
